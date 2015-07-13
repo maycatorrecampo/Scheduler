@@ -1,5 +1,13 @@
 /*Style.css*/
 
+body{ padding-bottom:50px;}
+
+.col-xs-15{
+    width:20%;
+}
+
+.times {margin-bottom: 5em;}
+
 .time-slot { }
 
 .time-slot input {

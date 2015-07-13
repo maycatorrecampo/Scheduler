@@ -12,28 +12,107 @@ angular.module('scheduleApp', ['firebase'])
     $scope.reset = function(){
 
         fb.$set({
-            monday:{
+            d01:{
                 name: 'Monday',
                 slots:{
-                    0900: {
-                        time: '9:00am',
+                    1100: {
+                        time: '11:00am',
                         booked: false
                     },
-                    0110: {
-                        time: '11:00am',
+                    1400: {
+                        time: '02:00pm',
+                        booked: false
+                    },
+                    1700: {
+                        time: '05:00pm',
+                        booked: false
+                    },
+                    2000: {
+                        time: '08:00pm',
                         booked: false
                     }
                 }
             },
-            tuesday:{
+            d02:{
                 name: 'Tuesday',
                 slots:{
-                    0900: {
-                        time: '9:00am',
+                    1100: {
+                        time: '11:00am',
                         booked: false
                     },
-                    0110:{
+                    1400: {
+                        time: '02:00pm',
+                        booked: false
+                    },
+                    1700: {
+                        time: '05:00pm',
+                        booked: false
+                    },
+                    2000: {
+                        time: '08:00pm',
+                        booked: false
+                    }
+                }
+            },
+            d03:{
+                name: 'Wednesday',
+                slots:{
+                    1100: {
                         time: '11:00am',
+                        booked: false
+                    },
+                    1400: {
+                        time: '02:00pm',
+                        booked: false
+                    },
+                    1700: {
+                        time: '05:00pm',
+                        booked: false
+                    },
+                    2000: {
+                        time: '08:00pm',
+                        booked: false
+                    }
+                }
+            },
+            d04:{
+                name: 'Thursday',
+                slots:{
+                    1100: {
+                        time: '11:00am',
+                        booked: false
+                    },
+                    1400: {
+                        time: '02:00pm',
+                        booked: false
+                    },
+                    1700: {
+                        time: '05:00pm',
+                        booked: false
+                    },
+                    2000: {
+                        time: '08:00pm',
+                        booked: false
+                    }
+                }
+            },
+            d05:{
+                name: 'Friday',
+                slots:{
+                    1100: {
+                        time: '11:00am',
+                        booked: false
+                    },
+                    1400: {
+                        time: '02:00pm',
+                        booked: false
+                    },
+                    1700: {
+                        time: '05:00pm',
+                        booked: false
+                    },
+                    2000: {
+                        time: '08:00pm',
                         booked: false
                     }
                 }
