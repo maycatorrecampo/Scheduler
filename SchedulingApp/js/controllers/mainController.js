@@ -138,11 +138,14 @@ angular.module('scheduleApp')
     };
     
     //Approve: update booking to true
-    $scope.approve = function(){
-        fb.$update({});
+    $scope.approve = function(slot){
+        slot.booked = true;
     };
     
     //Reject: update pending to false
+    $scope.reject = function(slot){
+        slot.pending = false;
+    };
     
     //create sync object
     var syncObject = fb.$asObject();

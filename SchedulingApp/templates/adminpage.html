@@ -2,11 +2,11 @@
     <div class = "row times" ng-repeat="day in days">
         <h3> {{day.name}} </h3>
         <div class = "row" ng-repeat = "slot in day.slots">
-            <div class = "row" ng-class="{pending: slot.pending}" ng-if="slot.pending">
+            <div class = "row" ng-class="{pending: slot.pending}" ng-if="slot.pending && !slot.booked">
                 <div class = "col-xs-4 col-sm-6">{{slot.time}}</div>
                 <div class = "col-xs-4 col-sm-6">
-                    <a href="#/admin" class="btn btn-success" ng-click="answer = 'accept'"> Accept </a>
-                    <a href="#/admin" class="btn btn-danger" ng-click="answer = 'reject'"> Reject </a>
+                    <a href="#/admin" class="btn btn-success" ng-click="approve(slot)"> Accept </a>
+                    <a href="#/admin" class="btn btn-danger" ng-click="reject(slot)"> Reject </a>
                     <span> {{answer}} </span>
                 </div>
             </div>
